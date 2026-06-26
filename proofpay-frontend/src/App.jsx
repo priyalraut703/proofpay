@@ -86,7 +86,7 @@ function App() {
       const addr = await connectWallet();
       setAddress(addr);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setConnecting(false);
     }
@@ -119,7 +119,7 @@ function App() {
       setFreelancerInput("");
       setAmountInput("");
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setCreating(false);
     }
@@ -153,7 +153,7 @@ function App() {
       setNotice(`Proof submitted for job #${jobId}.`);
       await refreshJob(jobId);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setLoadingJobId(null);
     }
@@ -169,7 +169,7 @@ function App() {
       setNotice(`Job #${jobId} approved. Funds released to freelancer.`);
       await refreshJob(jobId);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setLoadingJobId(null);
     }
@@ -185,7 +185,7 @@ function App() {
       setNotice(`Job #${jobId} rejected. Freelancer may resubmit.`);
       await refreshJob(jobId);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setLoadingJobId(null);
     }
@@ -201,7 +201,7 @@ function App() {
       setNotice(`Job #${jobId} auto-released after deadline.`);
       await refreshJob(jobId);
     } catch (err) {
-      setError(err.message);
+      setError(err?.message || JSON.stringify(err));
     } finally {
       setLoadingJobId(null);
     }
