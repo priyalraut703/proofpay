@@ -3,6 +3,7 @@
 ProofPay is an anti-scam escrow system for freelance work, built on Stellar's Soroban smart contract platform. It solves the classic two-sided trust problem in freelancing: clients who refuse to pay after work is delivered, and freelancers who never deliver after being paid.
 
 **Live demo:** https://proofpay-app.vercel.app/
+**Demo video:** https://drive.google.com/file/d/1NQa9L_oCQhXf1h3eY6oBbB2UXfov7gP4/view?usp=drive_link
 **Contract (Stellar Testnet):** `CDNCMTMXO5UCA6VXN4ANOGOLGPFBM22JUCZD7ZNGCCRUOQAJVZEQB23I`
 **Explorer:** https://stellar.expert/explorer/testnet/contract/CDNCMTMXO5UCA6VXN4ANOGOLGPFBM22JUCZD7ZNGCCRUOQAJVZEQB23I
 
