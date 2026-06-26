@@ -6,6 +6,17 @@ ProofPay is an anti-scam escrow system for freelance work, built on Stellar's So
 **Contract (Stellar Testnet):** `CDNCMTMXO5UCA6VXN4ANOGOLGPFBM22JUCZD7ZNGCCRUOQAJVZEQB23I`
 **Explorer:** https://stellar.expert/explorer/testnet/contract/CDNCMTMXO5UCA6VXN4ANOGOLGPFBM22JUCZD7ZNGCCRUOQAJVZEQB23I
 
+## Screenshots
+
+| | |
+|---|---|
+| **Desktop UI** | **Mobile UI** |
+| ![Desktop UI](docs/screenshots/01-desktop-ui.png) | ![Mobile UI](docs/screenshots/02-mobile-ui.jpeg) |
+| **CI/CD Pipeline (Green)** | **Test Output (6 passing)** |
+| ![CI Pipeline](docs/screenshots/03-ci-pipeline-success.png) | ![Test Output](docs/screenshots/06-test-output.png) |
+| **Contract on Explorer** | **Transaction: create_job (inter-contract call)** |
+| ![Contract Explorer](docs/screenshots/04-contract-explorer.png) | ![Transaction](docs/screenshots/05-transaction-create-job.png) |
+
 ---
 
 ## The problem
