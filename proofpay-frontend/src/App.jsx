@@ -214,7 +214,9 @@ function App() {
           <span className="brand-mark">⟡</span>
           <div className="brand-text">
             <h1>ProofPay</h1>
-            <p className="brand-sub">Work-proof escrow, notarized on-chain</p>
+            <p className="brand-sub">
+               Secure escrow for freelance work - proof in, payment out.
+           </p>
           </div>
         </div>
 
@@ -237,6 +239,27 @@ function App() {
           )}
         </div>
       </header>
+      <section className="how-it-works">
+        <div className="how-step">
+          <span className="how-num">1</span>
+          <span className="how-label">Client creates job & locks payment in escrow</span>
+        </div>
+        <div className="how-arrow">→</div>
+        <div className="how-step">
+          <span className="how-num">2</span>
+          <span className="how-label">Freelancer submits proof of work</span>
+        </div>
+        <div className="how-arrow">→</div>
+        <div className="how-step">
+          <span className="how-num">3</span>
+          <span className="how-label">Client approves or rejects</span>
+        </div>
+        <div className="how-arrow">→</div>
+        <div className="how-step">
+          <span className="how-num">4</span>
+          <span className="how-label">Funds release instantly (or auto-release if client goes silent)</span>
+        </div>
+      </section>
 
       {error && <div className="banner banner-error">{error}</div>}
       {notice && <div className="banner banner-notice">{notice}</div>}
@@ -510,7 +533,14 @@ function App() {
       <footer className="ledger-footer">
         <p>
           ProofPay runs entirely on Stellar testnet. Contract{" "}
-          <span className="mono">CDNCMT…VZEQB23I</span>
+          
+            className="mono"
+            <a href="https://stellar.expert/explorer/testnet/contract/CDNCMTMXO5UCA6VXN4ANOGOLGPFBM22JUCZD7ZNGCCRUOQAJVZEQB23I"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CDNCMT…VZEQB23I ↗
+          </a>
         </p>
       </footer>
     </div>
