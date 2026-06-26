@@ -171,7 +171,10 @@ test test::test_submit_proof_moves_job_to_submitted ... ok
 
 test test::test_reject_allows_resubmission ... ok
 test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
 ## Roadmap / known limitations
+
+See [docs/DESIGN.md](docs/DESIGN.md) for the full design rationale and known limitations, including:
 
 - Proof is currently a hash of arbitrary text (link/description), not a verified file upload — file storage would require an off-chain pinning service (e.g. IPFS) in a production version.
 - No partial payments or milestone-based escrow yet — each job is all-or-nothing.
